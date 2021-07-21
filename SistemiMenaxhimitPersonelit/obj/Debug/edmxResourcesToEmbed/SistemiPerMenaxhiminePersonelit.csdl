@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemiMenaxhimitPersonelitModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Passwrod" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Organizata">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Organizata1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Pershkrimi" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="p" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="q" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="d" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="e" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PervojaPunes" Relationship="Self.FK_PervojaPunes_Organizata" FromRole="Organizata" ToRole="PervojaPunes" />
+  </EntityType>
+  <EntityType Name="Personeli">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Mbiemri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Adresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="p" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="q" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="d" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="e" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="PervojaPunes" Relationship="Self.FK_PervojaPunes_Personeli" FromRole="Personeli" ToRole="PervojaPunes" />
+  </EntityType>
+  <EntityType Name="PervojaPune">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PersoniID" Type="Int32" Nullable="false" />
+    <Property Name="OrganizataID" Type="Int32" Nullable="false" />
+    <Property Name="VitePervoje" Type="Int32" />
+    <Property Name="Pergjegjesite" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="p" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="q" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="d" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="e" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Organizata" Relationship="Self.FK_PervojaPunes_Organizata" FromRole="PervojaPunes" ToRole="Organizata" />
+    <NavigationProperty Name="Personeli" Relationship="Self.FK_PervojaPunes_Personeli" FromRole="PervojaPunes" ToRole="Personeli" />
+  </EntityType>
+  <Association Name="FK_PervojaPunes_Organizata">
+    <End Role="Organizata" Type="Self.Organizata" Multiplicity="1" />
+    <End Role="PervojaPunes" Type="Self.PervojaPune" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organizata">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PervojaPunes">
+        <PropertyRef Name="OrganizataID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PervojaPunes_Personeli">
+    <End Role="Personeli" Type="Self.Personeli" Multiplicity="1" />
+    <End Role="PervojaPunes" Type="Self.PervojaPune" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personeli">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PervojaPunes">
+        <PropertyRef Name="PersoniID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemiMenaxhimitPersonelitEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Logins" EntityType="Self.Login" />
+    <EntitySet Name="Organizatas" EntityType="Self.Organizata" />
+    <EntitySet Name="Personelis" EntityType="Self.Personeli" />
+    <EntitySet Name="PervojaPunes" EntityType="Self.PervojaPune" />
+    <AssociationSet Name="FK_PervojaPunes_Organizata" Association="Self.FK_PervojaPunes_Organizata">
+      <End Role="Organizata" EntitySet="Organizatas" />
+      <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PervojaPunes_Personeli" Association="Self.FK_PervojaPunes_Personeli">
+      <End Role="Personeli" EntitySet="Personelis" />
+      <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

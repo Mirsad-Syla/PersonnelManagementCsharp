@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SistemiMenaxhimitPersonelitModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Username" Type="nchar" MaxLength="20" />
+    <Property Name="Passwrod" Type="nchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Organizata">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Organizata" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Pershkrimi" Type="nvarchar" MaxLength="300" />
+  </EntityType>
+  <EntityType Name="Personel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Emri" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Mbiemri" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Adresa" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Gjinia" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Ditelindja" Type="nvarchar" MaxLength="20" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PervojaPunes">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OrganizataID" Type="int" Nullable="false" />
+    <Property Name="PersoniID" Type="int" Nullable="false" />
+    <Property Name="VitePervoje" Type="int" Nullable="false" />
+    <Property Name="Pergjegjesite" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_PervojaPunes_Organizata">
+    <End Role="Organizata" Type="Self.Organizata" Multiplicity="1" />
+    <End Role="PervojaPunes" Type="Self.PervojaPunes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Organizata">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PervojaPunes">
+        <PropertyRef Name="OrganizataID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PervojaPunes_Personel">
+    <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
+    <End Role="PervojaPunes" Type="Self.PervojaPunes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Personel">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="PervojaPunes">
+        <PropertyRef Name="PersoniID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="SistemiMenaxhimitPersonelitModelStoreContainer">
+    <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Organizata" EntityType="Self.Organizata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PervojaPunes" EntityType="Self.PervojaPunes" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_PervojaPunes_Organizata" Association="Self.FK_PervojaPunes_Organizata">
+      <End Role="Organizata" EntitySet="Organizata" />
+      <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PervojaPunes_Personel" Association="Self.FK_PervojaPunes_Personel">
+      <End Role="Personel" EntitySet="Personel" />
+      <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

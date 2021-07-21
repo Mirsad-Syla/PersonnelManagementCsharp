@@ -1,0 +1,80 @@
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe.config
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csprojAssemblyReference.cache
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoginForm.resources
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmOrganizate.resources
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPersoneli.resources
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.MainForm.resources
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.Properties.Resources.resources
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.GenerateResource.cache
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.exe
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\Users\HP\source\repos\Siguria e te dhenave\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPersoneliOrganizate.resources
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe.config
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoginForm.resources
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmOrganizate.resources
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPersoneli.resources
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.MainForm.resources
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.Properties.Resources.resources
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.exe
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\Projekti SystemMAnagement\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPuna.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csprojAssemblyReference.cache
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoginForm.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPuna.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmOrganizate.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPersoneli.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.MainForm.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.Properties.Resources.resources
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.GenerateResource.cache
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.CoreCompileInputs.cache
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.pdb
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe.config
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.pdb
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.exe
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\EntityFramework.dll
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\EntityFramework.xml
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.CopyComplete
+D:\Jeton\Viti III\Semestri VI\Siguria e informacionit\Projekti\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoadingForm.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe.config
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\EntityFramework.dll
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\EntityFramework.xml
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csprojAssemblyReference.cache
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoadingForm.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoginForm.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPuna.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmOrganizate.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPersoneli.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.MainForm.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.Properties.Resources.resources
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.GenerateResource.cache
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.CoreCompileInputs.cache
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.CopyComplete
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.exe
+C:\Users\Mirsad\Desktop\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe.config
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.exe
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\SistemiMenaxhimitPersonelit.pdb
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\EntityFramework.dll
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\bin\Debug\EntityFramework.xml
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csprojAssemblyReference.cache
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoadingForm.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.LoginForm.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPuna.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmOrganizate.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.frmPersoneli.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.MainForm.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.Properties.Resources.resources
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.GenerateResource.cache
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.CoreCompileInputs.cache
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.csproj.CopyComplete
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.exe
+C:\FIMK - Informatike Inxhinierike\Semestri 6\Siguria e Informacionit\SistemiMenaxhimitPersonelit\SistemiMenaxhimitPersonelit\obj\Debug\SistemiMenaxhimitPersonelit.pdb

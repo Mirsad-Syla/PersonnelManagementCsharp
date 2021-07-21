@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SistemiMenaxhimitPersonelitModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="nchar" MaxLength="20" />
+          <Property Name="Passwrod" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Organizata">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Organizata" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Pershkrimi" Type="nvarchar" MaxLength="300" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Emri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Mbiemri" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Adresa" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="Gjinia" Type="nvarchar" MaxLength="1" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Ditelindja" Type="nvarchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PervojaPunes">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OrganizataID" Type="int" Nullable="false" />
+          <Property Name="PersoniID" Type="int" Nullable="false" />
+          <Property Name="VitePervoje" Type="int" Nullable="false" />
+          <Property Name="Pergjegjesite" Type="nvarchar(max)" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_PervojaPunes_Organizata">
+          <End Role="Organizata" Type="Self.Organizata" Multiplicity="1" />
+          <End Role="PervojaPunes" Type="Self.PervojaPunes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Organizata">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PervojaPunes">
+              <PropertyRef Name="OrganizataID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PervojaPunes_Personel">
+          <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
+          <End Role="PervojaPunes" Type="Self.PervojaPunes" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PervojaPunes">
+              <PropertyRef Name="PersoniID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemiMenaxhimitPersonelitModelStoreContainer">
+          <EntitySet Name="Login" EntityType="Self.Login" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Organizata" EntityType="Self.Organizata" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Personel" EntityType="Self.Personel" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PervojaPunes" EntityType="Self.PervojaPunes" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_PervojaPunes_Organizata" Association="Self.FK_PervojaPunes_Organizata">
+            <End Role="Organizata" EntitySet="Organizata" />
+            <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PervojaPunes_Personel" Association="Self.FK_PervojaPunes_Personel">
+            <End Role="Personel" EntitySet="Personel" />
+            <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SistemiMenaxhimitPersonelitModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Login">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Passwrod" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Organizata">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Organizata1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Pershkrimi" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="PervojaPunes" Relationship="Self.FK_PervojaPunes_Organizata" FromRole="Organizata" ToRole="PervojaPunes" />
+        </EntityType>
+        <EntityType Name="Personel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Emri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mbiemri" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Adresa" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Gjinia" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Ditelindja" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="PervojaPunes" Relationship="Self.FK_PervojaPunes_Personel" FromRole="Personel" ToRole="PervojaPunes" />
+        </EntityType>
+        <EntityType Name="PervojaPune">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OrganizataID" Type="Int32" Nullable="false" />
+          <Property Name="PersoniID" Type="Int32" Nullable="false" />
+          <Property Name="VitePervoje" Type="Int32" Nullable="false" />
+          <Property Name="Pergjegjesite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Organizata" Relationship="Self.FK_PervojaPunes_Organizata" FromRole="PervojaPunes" ToRole="Organizata" />
+          <NavigationProperty Name="Personel" Relationship="Self.FK_PervojaPunes_Personel" FromRole="PervojaPunes" ToRole="Personel" />
+        </EntityType>
+        <Association Name="FK_PervojaPunes_Organizata">
+          <End Role="Organizata" Type="Self.Organizata" Multiplicity="1" />
+          <End Role="PervojaPunes" Type="Self.PervojaPune" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Organizata">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PervojaPunes">
+              <PropertyRef Name="OrganizataID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PervojaPunes_Personel">
+          <End Role="Personel" Type="Self.Personel" Multiplicity="1" />
+          <End Role="PervojaPunes" Type="Self.PervojaPune" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Personel">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="PervojaPunes">
+              <PropertyRef Name="PersoniID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SistemiMenaxhimitPersonelitEntities5" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Logins" EntityType="Self.Login" />
+          <EntitySet Name="Organizatas" EntityType="Self.Organizata" />
+          <EntitySet Name="Personels" EntityType="Self.Personel" />
+          <EntitySet Name="PervojaPunes" EntityType="Self.PervojaPune" />
+          <AssociationSet Name="FK_PervojaPunes_Organizata" Association="Self.FK_PervojaPunes_Organizata">
+            <End Role="Organizata" EntitySet="Organizatas" />
+            <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PervojaPunes_Personel" Association="Self.FK_PervojaPunes_Personel">
+            <End Role="Personel" EntitySet="Personels" />
+            <End Role="PervojaPunes" EntitySet="PervojaPunes" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SistemiMenaxhimitPersonelitModelStoreContainer" CdmEntityContainer="SistemiMenaxhimitPersonelitEntities5">
+          <EntitySetMapping Name="Logins">
+            <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.Login">
+              <MappingFragment StoreEntitySet="Login">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Passwrod" ColumnName="Passwrod" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Organizatas">
+            <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.Organizata">
+              <MappingFragment StoreEntitySet="Organizata">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Organizata1" ColumnName="Organizata" />
+                <ScalarProperty Name="Pershkrimi" ColumnName="Pershkrimi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Personels">
+            <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.Personel">
+              <MappingFragment StoreEntitySet="Personel">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Emri" ColumnName="Emri" />
+                <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+                <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+                <ScalarProperty Name="Gjinia" ColumnName="Gjinia" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Ditelindja" ColumnName="Ditelindja" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PervojaPunes">
+            <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.PervojaPune">
+              <MappingFragment StoreEntitySet="PervojaPunes">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="OrganizataID" ColumnName="OrganizataID" />
+                <ScalarProperty Name="PersoniID" ColumnName="PersoniID" />
+                <ScalarProperty Name="VitePervoje" ColumnName="VitePervoje" />
+                <ScalarProperty Name="Pergjegjesite" ColumnName="Pergjegjesite" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

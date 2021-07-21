@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SistemiMenaxhimitPersonelitModelStoreContainer" CdmEntityContainer="SistemiMenaxhimitPersonelitEntities5">
+    <EntitySetMapping Name="Logins">
+      <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.Login">
+        <MappingFragment StoreEntitySet="Login">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Passwrod" ColumnName="Passwrod" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Organizatas">
+      <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.Organizata">
+        <MappingFragment StoreEntitySet="Organizata">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Organizata1" ColumnName="Organizata" />
+          <ScalarProperty Name="Pershkrimi" ColumnName="Pershkrimi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Personels">
+      <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.Personel">
+        <MappingFragment StoreEntitySet="Personel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Emri" ColumnName="Emri" />
+          <ScalarProperty Name="Mbiemri" ColumnName="Mbiemri" />
+          <ScalarProperty Name="Adresa" ColumnName="Adresa" />
+          <ScalarProperty Name="Gjinia" ColumnName="Gjinia" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Ditelindja" ColumnName="Ditelindja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PervojaPunes">
+      <EntityTypeMapping TypeName="SistemiMenaxhimitPersonelitModel.PervojaPune">
+        <MappingFragment StoreEntitySet="PervojaPunes">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="OrganizataID" ColumnName="OrganizataID" />
+          <ScalarProperty Name="PersoniID" ColumnName="PersoniID" />
+          <ScalarProperty Name="VitePervoje" ColumnName="VitePervoje" />
+          <ScalarProperty Name="Pergjegjesite" ColumnName="Pergjegjesite" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
